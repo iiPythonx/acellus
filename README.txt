@@ -17,7 +17,7 @@ Step 2: Install Code-Injector
 https://github.com/Lor-Saba/Code-Injector
 
     Setup an injection with the following settings:
-    - URL Match: .*\.acellus\.com
+    - URL Match: (admin190|signin)\.acellus\.com
     - Files: <an url to your webserver hosting patched.js>
         (in my case I have it set to "http://localhost:8080/pub/patched.js", as I'm running pyhttpfs)
 
