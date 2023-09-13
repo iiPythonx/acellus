@@ -1,3 +1,13 @@
+WHAT'S IT DO?
+-----------------------------------
+
+- Allows setting video speed to 2x
+- Prevents video from pausing when you switch tabs
+- Allows opening inspect element without being booted lmao
+- Allows pasting into writing tutor (gdocs/etc)
+- Removes console spam to free up some CPU
+
+
 HOW TO USE
 -----------------------------------
 
@@ -19,19 +29,14 @@ https://github.com/Lor-Saba/Code-Injector
     Setup an injection with the following settings:
     - URL Match: (admin19.+|signin)\.acellus\.com
     - Files: <an url to your webserver hosting patched.js>
-        (in my case I have it set to "http://localhost:8080/pub/patched.js", as I'm running pyhttpfs)
+        
+        DON'T HAVE A WEBSERVER?
+         1. Install Python
+         2. pip install pyhttpfs
+         3. Download this repository and open it in your terminal
+         4. pyhttpfs -l ./ -p 8080
+         5. Set the Code Injector URL to http://localhost:8080/pub/patched.js
+         6. Profit
 
 Step 3: Force reload page
 Step 4: Profit
-
-FILE LISTING
------------------------------------
-
-- raw.js
-    - This is the raw content of the latest STABLE Acellus code
-- patched.js
-    - Latest STABLE patch
-- raw_latest.js
-    - Bleeding edge raw code from Acellus
-- latest_decomp.js
-    - Decompilation of raw_latest.js for patching
