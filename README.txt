@@ -11,13 +11,13 @@ https://github.com/kylepaulsen/ResourceOverride
            ^^^^^ or any other random website
 
         Why? Because this will stop the unpatched script from loading
-        thanks to Acellus' retarted CSP policy.
+        thanks to Acellus' retarded CSP policy.
 
 Step 2: Install Code-Injector
 https://github.com/Lor-Saba/Code-Injector
 
     Setup an injection with the following settings:
-    - URL Match: (admin190|signin)\.acellus\.com
+    - URL Match: (admin19.+|signin)\.acellus\.com
     - Files: <an url to your webserver hosting patched.js>
         (in my case I have it set to "http://localhost:8080/pub/patched.js", as I'm running pyhttpfs)
 
