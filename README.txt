@@ -23,3 +23,15 @@ https://github.com/Lor-Saba/Code-Injector
 
 Step 3: Force reload page
 Step 4: Profit
+
+FILE LISTING
+-----------------------------------
+
+- raw.js
+    - This is the raw content of the latest STABLE Acellus code
+- patched.js
+    - Latest STABLE patch
+- raw_latest.js
+    - Bleeding edge raw code from Acellus
+- latest_decomp.js
+    - Decompilation of raw_latest.js for patching
