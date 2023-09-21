@@ -1,11 +1,16 @@
-WHAT'S IT DO?
+WHATS IT DO?
 -----------------------------------
 
-- Allows setting video speed to 2x
 - Prevents video from pausing when you switch tabs
 - Allows opening inspect element without being booted lmao
 - Allows pasting into writing tutor (gdocs/etc)
 - Removes console spam to free up some CPU
+- Should be 100% hidden from Acellus
+    - Edited version of the public code, so nothing can *really* be detected
+    - Everything that's been removed has been swapped with null or something similar
+    - (or acellus can just stop banning people from improving their platform)
+
+* Used to allow 2x video speed, however now Acellus uses a server-side timing mechanism.
 
 
 HOW TO USE
