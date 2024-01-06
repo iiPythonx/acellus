@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkacellus=self.webpackChunkacellus||[]).push([[72],{20072:function(e,u,s){s.r(u);var c=s(46417);u.default=function(){return(0,c.jsx)("div",{children:"MyStats"})}}}]);

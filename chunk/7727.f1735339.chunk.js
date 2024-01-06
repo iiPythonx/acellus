@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkacellus=self.webpackChunkacellus||[]).push([[7727],{87727:function(u,e,n){n.r(e),n.d(e,{default:function(){return c}});var t=n(46417);function c(){return(0,t.jsx)(t.Fragment,{})}}}]);

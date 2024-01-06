@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkacellus=self.webpackChunkacellus||[]).push([[164],{164:function(e,u,s){s.r(u);var a=s(46417);u.default=function(){return(0,a.jsx)("div",{children:"TeamStats"})}}}]);
