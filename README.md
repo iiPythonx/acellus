@@ -20,11 +20,19 @@
 Setup an override with the following settings:
 ```
 - Tab URL: *
-- From: https://*.acellus.com/static/js/main*
+- From: https://*.acellus.com/static/js/*
 - To: https://google.com
 ```
 You can replace `https://google.com` with any other site.  
-Why? Because this will stop the unpatched script from loading thanks to Acellus' retarded CSP policy.
+Why? Because this will stop the unpatched script from loading due to both CSP and a mismatched content type.  
+
+Also setup a "Change Headers" rule with the following settings:
+```
+- Tab URL: *
+- For: https://*.acellus.com/*
+- Request Headers: none
+- Response Headers: Remove "Content-Security-Policy"
+```
 
 
 ### Step 2: Install Code-Injector
