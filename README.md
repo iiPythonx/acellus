@@ -42,20 +42,8 @@ Also setup a "Change Headers" rule with the following settings:
 Setup an injection with the following settings:
 ```
 URL Match: (admin19.+|signin)\.acellus\.com
-Files: http://localhost:8080/pub/patched.js
+Files: https://cdn.jsdelivr.net/gh/iiPythonx/acellus/patched.js
 ```
-    
-**DON'T HAVE A WEBSERVER?**
-1. Install [Python](https://python.org)
-2. Clone the repository using git (or [download the zip](https://github.com/iiPythonx/acellus/archive/refs/heads/main.zip))
-3. Install and setup [pyhttpfs](https://github.com/iiPythonx/pyhttpfs):
-```sh
-pip install pyhttpfs
-cd acellus
-pyhttpfs -l ./ -p 8080
-```
-4. Set the Code Injector URL to http://localhost:8080/pub/patched.js
-5. Done
 
 #### Step 3: Force reload the page
 #### Step 4: Profit
