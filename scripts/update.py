@@ -1,6 +1,7 @@
 # Copyright (c) 2024 iiPython
 
 # Modules
+import json
 import shutil
 import requests
 import subprocess
@@ -28,3 +29,11 @@ with open("raw.js", "w+") as fh:
 subprocess.run(["webcrack", "raw.js", "-o", "webcrack"])
 shutil.move("webcrack/deobfuscated.js", "deobfuscated.js")
 shutil.rmtree("webcrack")
+
+# Handle chunks
+print("Please fetch the chunk table from raw.js and paste it in here:")
+chunk_table = json.loads(input("> ").replace(",", ",\"").replace(":", "\":").replace("{", "{\""))  # Convert the integer: string format into string: string
+for k, v in chunk_table.items():
+    filename = f"{k}.{v}.chunk.js"
+    with open(f"chunk/{filename}", "wb") as fh:
+        fh.write(requests.get(target_uri.split("sign-in/")[0] + "static/js/" + filename).content)
