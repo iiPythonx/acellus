@@ -40,7 +40,7 @@ Also setup a "Change Headers" rule with the following settings:
 Setup an injection with the following settings:
 ```
 URL Match: (admin19.+|signin)\.acellus\.com
-Files: https://cdn.jsdelivr.net/gh/iiPythonx/acellus/patched_public.js
+Files: https://cdn.jsdelivr.net/gh/iiPythonx/acellus/patched_pub.js
 ```
 
 #### Step 3: Force reload the page
