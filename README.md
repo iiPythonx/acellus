@@ -18,7 +18,7 @@
 Setup an override with the following settings:
 ```
 - Tab URL: *
-- From: https://*.acellus.com/static/js/*
+- From: https://*.acellus.com/assets/*.js
 - To: https://google.com
 ```
 You can replace `https://google.com` with any other site.  
